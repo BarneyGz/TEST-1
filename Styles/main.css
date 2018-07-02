@@ -1,0 +1,204 @@
+/*main styles*/
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 19px;
+	font-family: 'Lato', sans-serif;
+	
+}
+body {
+	width: 100%;
+	height: 100%;
+	min-width: 820px;
+	background:url('https://images.unsplash.com/photo-1460602594182-8568137446ce?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6a89cf0d31c8ed23b35aaf9a119a9f5&w=1000&q=80') 100% 100%;
+}
+/* left + right block styles */
+.main-block {
+
+	margin: 25px;
+	min-width: 820px;
+}
+.left-block, .right-block {
+	width: 50%;
+	height: auto;
+	padding: 30px;
+	background-color:#f3f3f3;
+	display: table-cell;
+	
+}
+
+
+/*Button styles*/
+.button-wrapper	{
+	margin-top: 25px;
+    text-align: center;
+}
+
+.buy-onclick {
+	color: white;
+	font-weight: bold;
+	background-color: #5baa42;
+	border: 0;
+	padding: 16px;
+	border-radius: 8px;
+	font-size: 12px;
+}
+.buy-onclick:hover {
+	background-color: #488634;
+	
+}
+.buy-onclick:active {
+	background-color: #6dca50;
+}
+/* PopUp styles */
+
+
+/*image styles*/
+.img-wrapper {
+	text-align: center;
+}
+.main-image {
+	max-width: 200px;
+	cursor: pointer;
+}
+#times {
+	position: absolute;
+    top: 1%;
+    right: 1%;
+    font-weight: bold;
+    margin: 0;
+    padding: 1px 7px;
+    border-radius: 100%;
+    cursor: pointer;
+	display: none;
+}
+
+#times:hover {
+	color:dimgrey;
+}
+
+/*modal styles*/
+.modal-header {
+	border-bottom: none !important;
+	padding: 0px 10px 0 !important;
+}
+.modal-body {
+	padding-top: 14px !important;
+	margin: 0 80px !important;
+	text-align: center !important;
+	border-bottom: none !important;
+}
+.modal-content {
+	width: 31rem !important;
+}
+.feedback {
+	font-weight: 700;
+	text-align: center;
+}
+
+.modal-body-inputs {
+	padding: 12px 25px;
+    background-color: #f3f3f3;
+    border: none;
+    color: #a4a4a4;
+    width: 90%;
+    margin-top: 12px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.btn-send {
+	background-color: #f6724e;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 90%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* accept input */
+.accept-input {
+	font-size: 12px;
+    margin-top: 10px;
+}
+label input {
+  display: none;/* <--скрываем дефолтный чекбокс */
+}
+label span {/* <-- стилизируем новый */
+  height: 12px;
+  width: 12px;
+  border: 1px solid gray;
+  display: inline-block;
+  position: relative;
+  background-color:#FFF;
+  border-radius:2px;
+  padding:3px;
+}
+[type=checkbox]:checked + span:before {/* <-- ставим иконку, когда чекбокс включен  */
+  content: ' ';
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  top: 0;
+  left: 0;
+  background-color: #f6724e;
+  font-size:23px;
+  border: 2px solid #f3f3f3;
+
+}
+/* <a />styles */
+a {
+	font-size: 15px;
+	font-weight: 600;
+	text-decoration: none;
+}
+a:hover {
+	padding: 1px;
+	font-weight: 680;
+	text-decoration: none !important;
+}
+a:active {
+	font-size: 17px;
+}
+/* Progressbar */
+
+#progress-proc {
+	font-size: 15px;
+	position: relative;
+	top:-4px;
+	margin-left: 15px;
+	
+}
+
+.progress-bar-text {
+	display: inline-block;
+	background-color: rgb(255, 212, 45);
+	color: rgb(44, 55, 61);
+	border: 2px solid rgb(44, 55, 61);
+	font-weight: 600;
+	position: relative;
+	left: -6px;
+	top: -2px;
+}
+.proc {
+	margin: 0px 6px;
+    position: relative;
+    top: -2px;
+}
+
+#progress-bar {
+	border: 2px solid rgb(44, 55, 61);
+}
+progress::-moz-progress-bar {
+	background: rgb(255, 212, 45); 
+}
+
+
+progress::-webkit-progress-value { 
+	background: rgb(255, 212, 45);
+}
+
+
+progress {
+	color: rgb(255, 212, 45);
+}
